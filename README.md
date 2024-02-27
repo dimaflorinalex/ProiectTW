@@ -9,3 +9,5 @@
 
 #### Configurarea aplicației
 1. Aplicația nu necesită configurare.
+
+#### Etapa 0. Prezentarea temei alese: https://docs.google.com/document/d/1Q70dXHQzRh4XR4QiM8ZGJBH-e5XibX81bybAmA7EZ84/edit?usp=sharing
