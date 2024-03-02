@@ -23,8 +23,8 @@
 8. Liniile 44-52: figure, figcaption, img cu srcset si sizes
 9. Textul contine keywords
 10. b, strong, em: liniile 45, 45, 49
-11. a - 74, b - 94, c - 63-68, d - 63
+11. a - 74, b - 134, c - 63-68, d - 63
 12. 81-84, 104-119
 13. 125-128
-14. 132
+14. 138
 15. Validare cu validator HTML w3
