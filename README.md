@@ -28,3 +28,4 @@
 13. 125-128
 14. 138
 15. Validare cu validator HTML w3
+16. Bonus: 123-139
