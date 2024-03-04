@@ -1,0 +1,15 @@
+body {
+    --culoare1: #F05AF0;
+}
+
+p {
+    color: red;
+}
+
+h2 {
+    border: 1px dotted var(--culoare1);
+}
+
+h1 {
+    font-style: italic;
+}
