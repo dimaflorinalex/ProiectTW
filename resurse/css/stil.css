@@ -1,15 +1,327 @@
+* {
+    scroll-behavior: smooth;
+}
+
 body {
-    --culoare1: #F05AF0;
+    --primary-color: #2765F5;
+    --secondary-color: #B5954A;
+    --secondary-color-2: #756848;
+    --primary-color-2: #424B61;
+    --text-color: #36332C;
+
+    transition: font-size 0.25s ease-in-out 0s;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    color: var(--primary-color);
+    transition: color 0.25s ease-in-out 0s;
+}
+
+a:hover {
+    color: var(--primary-color-2);
+}
+
+ul {
+    list-style-type: circle;
 }
 
 p {
-    color: red;
-}
-
-h2 {
-    border: 1px dotted var(--culoare1);
+    font-size: 1em;
+    color: var(--text-color);
 }
 
 h1 {
+    font-size: 1.6em;
     font-style: italic;
+}
+
+h2 {
+    font-size: 1.5em;
+    border: 1px dotted var(--primary-color);
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+h3 {
+    font-size: 1.4em;
+    border: 1px dotted var(--primary-color);
+}
+
+img {
+    min-width: 10%;
+    max-width: 80%;
+    object-fit: contain;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 10px 5px lightgray;
+}
+
+header > #header__brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+header + main {
+    margin-top: 50px;
+}
+
+main section + section,
+main ul + section {
+    margin-top: 20px;
+}
+
+.zona-1 { grid-area: zona-1; }
+.zona-2 { grid-area: zona-2; }
+.zona-3 { grid-area: zona-3; }
+.zona-4 { grid-area: zona-4; }
+.zona-5 { grid-area: zona-5; }
+.zona-6 { grid-area: zona-6; }
+.zona-8 { grid-area: zona-8; }
+
+main {
+    --margin-main: 64px;
+    --grid-gap-main: 32px;
+
+    display: grid;
+    grid-template-areas:
+        'zona-1 zona-1 zona-1 zona-1'
+        'zona-5 zona-6 zona-6 zona-7'
+        'zona-3 zona-3 zona-2 zona-2'
+        'zona-4 zona-4 zona-2 zona-2'
+        'zona-8 zona-8 zona-8 zona-8'
+        ;
+    grid-gap: var(--grid-gap-main);
+    margin: 0px var(--margin-main);
+}
+
+#program-lucru tr {
+    box-shadow: 0px 0px 0px 0px var(--primary-color) inset;
+    transition: box-shadow 0.5s ease-in-out 0s;
+}
+
+#program-lucru tr:hover {
+    box-shadow: 0px 0px 6px 3px var(--primary-color) inset;
+}
+
+#program-lucru th, #program-lucru td {
+    padding: 2px;
+}
+
+#program-lucru th, #program-lucru td {
+    border: 2px solid black;
+}
+
+#program-lucru th:nth-child(even), #program-lucru td:nth-child(even) {
+    border-left-color: var(--primary-color-2);
+}
+
+#program-lucru th:nth-child(odd), #program-lucru td:nth-child(odd) {
+    border-right-color: var(--secondary-color);
+}
+
+#program-lucru thead {
+    background-color: var(--secondary-color-2);
+    color: white;
+}
+
+#program-lucru tbody {
+    border: 1px solid red;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+}
+
+#promotii section h3 {
+    color: var(--secondary-color);
+}
+
+.container-iframe {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.taburi-iframe {
+    display: flex;
+    column-gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.taburi-iframe a {
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 10px 16px;
+    color: white;
+    background-color: var(--primary-color);
+    transition: background-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s;
+    border: 6px solid white;
+    border-top: 10px solid var(--primary-color);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.taburi-iframe a:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.container-iframe iframe {
+    width: 100%;
+    height: 400px;
+    border: 4px solid var(--primary-color);
+}
+
+main + footer {
+    margin-top: 50px;
+}
+
+#contact {
+    grid-area: contact;
+}
+
+#linkuri-utile {
+    grid-area: linkuri-utile;
+}
+
+#copyright {
+    grid-area: copyright;
+}
+
+footer {
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: 0px 0px 10px 5px lightgray;
+    background-color: var(--secondary-color);
+    padding: 40px;
+    gap: 20px;
+    display: grid;
+    grid-template-areas: 'contact linkuri-utile copyright';
+}
+
+#link-top{
+    position:fixed;
+    bottom:0.3em;
+    opacity:0.5;
+    left:0.3em;
+    width:3rem;
+    box-sizing: border-box;
+    height:3rem;
+    line-height:3rem;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    border: 5px solid var(--secondary-color-2);
+    border-top-color:var(--primary-color);
+    border-radius:50%;
+    background: rgb(220,220,220);
+    box-shadow: 0px 0px 10px 5px lightgray;
+
+    transition: opacity 0.4s ease-in-out 0s;
+}
+
+#link-top:hover{
+    opacity:1;
+}
+
+#chat-on-wapp {
+    margin-top: 10px;
+    min-width: 160px;
+    max-width: 60%;
+}
+
+math {
+    font-size: 1.2em;
+}
+
+math mi {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+math mo {
+    font-style: italic;
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        font-size: 15px;
+    }
+
+    main {
+        --margin-main: 32px;
+        --grid-gap-main: 32px;
+
+        grid-template-areas:
+            'zona-1 zona-1'
+            'zona-6 zona-6'
+            'zona-5 zona-7'
+            'zona-2 zona-2'
+            'zona-3 zona-3'
+            'zona-4 zona-4'
+            'zona-8 zona-8'
+            ;
+    }
+
+    footer {
+        grid-template-areas:
+            'contact linkuri-utile'
+            'copyright copyright'
+            ;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    * {
+        animation: none !important;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    main {
+        --margin-main: 16px;
+        --grid-gap-main: 16px;
+
+        grid-template-areas:
+            'zona-1'
+            'zona-6'
+            'zona-5'
+            'zona-7'
+            'zona-2'
+            'zona-3'
+            'zona-4'
+            'zona-8'
+            ;
+    }
+
+    #program-lucru-wrapper {
+        overflow-x: scroll;
+    }
+
+    #program-lucru {
+        width: 120%;
+    }
+
+    footer {
+        grid-template-areas:
+            'contact'
+            'linkuri-utile'
+            'copyright'
+            ;
+    }
 }

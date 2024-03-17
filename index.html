@@ -3,7 +3,7 @@
 <html lang="ro">
     <head>
         <title>EasyLicense - Magazin de Licente Software</title>
-
+        
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="EasyLicense, magazin licente software, licente software, chei de activare software, licente Windows, licente Microsoft, licente Office, licenta antivirus, licenta program software"> <!-- cuvintele cheie ale paginii; majoritatea motoarelor de căutare ignoră keywords -->
@@ -20,49 +20,61 @@
         <meta name="msapplication-config" content="./resurse/favicon/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
 
+        <link rel="stylesheet" href="./resurse/css/reset.css" type="text/css">
         <link rel="stylesheet" href="./resurse/css/stil.css" type="text/css">
 
-        <!-- <style>
-            p {
-                /* color: green; */
-            }
-        </style> -->
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <img src="./resurse/imagini/logo.png" alt="Logo EasyLicense" width="100" height="100">
-            <h1 id="acasa">EasyLicense</h1>
+            <div id="header__brand">
+                <img src="./resurse/imagini/logo.png" alt="Logo EasyLicense" width="50" height="50">
+                <h1 id="acasa">EasyLicense</h1>
+            </div>
 
-            <nav>
-                <ul>
-                    <li><a href="#acasa">Acasa</a></li>
-                    <li><a href="#despre-noi">Despre noi</a></li>
-                    <li><a href="#produse">Produse</a>
-                        <ul>
-                            <li><a href="#licente-windows">Licente Windows</a></li>
-                            <li><a href="#licente-office">Licente Office</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#promotii">Promotii</a></li>
-                    <li><a href="#faq">Intrebari frecvente</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <details>
+                <summary>Meniu</summary>
+                <nav>
+                    <ul>
+                        <li><a href="#acasa">Acasa</a></li>
+                        <li><a href="#despre-noi">Despre noi</a></li>
+                        <li><a href="#produse">Produse</a>
+                            <ul>
+                                <li><a href="#licente-windows">Licente Windows</a></li>
+                                <li><a href="#licente-office">Licente Office</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#promotii">Promotii</a></li>
+                        <li><a href="#faq">Intrebari frecvente</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </details>
         </header>
 
         <main>
-            <section id="despre-noi">
-                <h2>Ce este EasyLicense?</h2>
-                <p><b>EasyLicense</b> este un <em>magazin de licente software online</em> care ofera o gama variata de licente pentru diferite programe software. Cu o simpla cautare pe site, poti gasi toate tipurile de licente software de care ai nevoie, inclusiv licente Windows, licente Microsoft, licente Office si chiar licente antivirus.</p>
-                <p>Unul dintre marile avantaje ale cumpararii de la EasyLicense este ca poti obtine chei de activare software instantaneu, fara a fi nevoie sa astepti livrarea fizica a vreunui produs. Aceasta inseamna ca poti incepe sa folosesti produsul software imediat ce ai finalizat achizitia.</p>
-                
-                <h2>Este EasyLicense un magazin de incredere?</h2>
-                <p>Mai mult decat atat, <strong>EasyLicense este partenerul tau de incredere in domeniul licentelor software</strong>. Oferim licente pentru o varietate de produse, fie ca e vorba de un program software specializat sau de un pachet complet de produse Microsoft. Indiferent de necesitatile tale, la noi poti gasi solutia potrivita.</p>
-                <p>Daca te confrunti cu intrebari sau nelamuriri, echipa noastra de suport este mereu disponibila pentru a te ajuta. Poti conta pe ea sa-ti ofere asistenta si sa-ti raspunda la orice intrebare legata de achizitii, activare sau alte aspecte legate de licentele software.</p>
+            <section class="zona-1" id="despre-noi">
+                <section>
+                    <h3><i class="fa-solid fa-bag-shopping fa-bounce"></i> Ce este EasyLicense?</h3>
+                    <p><b>EasyLicense</b> este un <em>magazin de licente software online</em> care ofera o gama variata de licente pentru diferite programe software. Cu o simpla cautare pe site, poti gasi toate tipurile de licente software de care ai nevoie, inclusiv licente Windows, licente Microsoft, licente Office si chiar licente antivirus.</p>
+                    <p>Unul dintre marile avantaje ale cumpararii de la EasyLicense este ca poti obtine chei de activare software instantaneu, fara a fi nevoie sa astepti livrarea fizica a vreunui produs. Aceasta inseamna ca poti incepe sa folosesti produsul software imediat ce ai finalizat achizitia.</p>
+                    </section>
+                <section>
+                    <h3><i class="fa-regular fa-square-check"></i> Este EasyLicense un magazin de incredere?</h3>
+                    <p>Mai mult decat atat, <strong>EasyLicense este partenerul tau de incredere in domeniul licentelor software</strong>. Oferim licente pentru o varietate de produse, fie ca e vorba de un program software specializat sau de un pachet complet de produse Microsoft. Indiferent de necesitatile tale, la noi poti gasi solutia potrivita.</p>
+                    <p>Daca te confrunti cu intrebari sau nelamuriri, echipa noastra de suport este mereu disponibila pentru a te ajuta. Poti conta pe ea sa-ti ofere asistenta si sa-ti raspunda la orice intrebare legata de achizitii, activare sau alte aspecte legate de licentele software.</p>
+                </section>
             </section>
 
-            <section id="produse">
+            <section class="zona-5">
+                <h2>EasyLicense - Partenerul tau in afaceri</h2>
+                <p>EasyLicense preia responsabilitatea asupra autenticitatii licentelor folosite de firma ta!</p>
+                <img src="./resurse/imagini/hands-1063442_960_720.jpg" width="480" height="360" alt="EasyLicense este partenerul tau in afaceri"/>
+            </section>
+
+            <section class="zona-6" id="produse">
                 <h2>Produse disponibile</h2>
                 <figure>
                     <img srcset="
@@ -75,12 +87,14 @@
                 </figure>
 
                 <p style="color: orange; text-decoration: underline;">In cazul in care nu stiti ce este o licenta software, ati putea urmari unul dintre urmatoarele videoclipuri:</p>
-                <ol>
-                    <li><a href="https://www.youtube-nocookie.com/embed/fyYVShNjkys?si=Gm0yvuyUzHJjhEEs" target="youtube-ce-este-o-licenta-software">What is a software license and what types are available? (autor: Forscope)</a></li>
-                    <li><a href="https://www.youtube-nocookie.com/embed/qqArqrRbI9A?si=zPzCvQRUUyjZkRqd" target="youtube-ce-este-o-licenta-software">What is a software licence? (how Microsoft Licensing works) (autor: SAMexpert TV - Microsoft Licensing and Cloud)</a></li>
-                </ol>
-                <iframe name="youtube-ce-este-o-licenta-software" src="https://www.youtube-nocookie.com/embed/fyYVShNjkys?si=Gm0yvuyUzHJjhEEs" width="560" height="315" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                
+                <div class="container-iframe">
+                    <iframe name="youtube-ce-este-o-licenta-software" src="https://www.youtube-nocookie.com/embed/fyYVShNjkys?si=Gm0yvuyUzHJjhEEs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <ol class="taburi-iframe">
+                        <li><a href="https://www.youtube-nocookie.com/embed/fyYVShNjkys?si=Gm0yvuyUzHJjhEEs" target="youtube-ce-este-o-licenta-software" title="What is a software license and what types are available? (autor: Forscope)">Forscope</a></li>
+                        <li><a href="https://www.youtube-nocookie.com/embed/qqArqrRbI9A?si=zPzCvQRUUyjZkRqd" target="youtube-ce-este-o-licenta-software" title="What is a software licence? (how Microsoft Licensing works) (autor: SAMexpert TV - Microsoft Licensing and Cloud)">SAMexpert TV</a></li>
+                    </ol>
+                </div>
+            
                 <p>Licentele software digitale sunt livrate instant sub forma unui fisier text care contine cheia de activare. Fisierul text pe care il vei primi in urma achitarii comenzii este similar cu <a href="./resurse/docs/exemplu-licenta.txt" download>acesta</a>.</p>
                 <ul>
                     <li>Licente Windows</li>
@@ -107,20 +121,12 @@
                 </section>
             </section>
 
-            <section id="promotii">
-                <h2>Promotii</h2>
-                <section>
-                    <h3>Reducere licente Windows</h3>
-                    <p>Periodic negociem cu furnizorii nostri de licente Windows pentru a oferi clientilor nostri un pret competitiv. Din discounturile obtinute, avem intotdeauna grija sa oferim mai departe clientilor. Cui nu-i prinde bine o reducere?</p>
-                </section>
-
-                <section>
-                    <h3>Reducere licente Office</h3>
-                    <p>Cum "scump" nu inseamna intotdeauna "de calitate", nici "ieftin" nu inseamna intotdeauna "prost". Periodic negociem cu furnizorii nostri de licente Microsoft Office si punem la dispozitia clientilor preturi mai mici pentru exact aceleasi produse software!</p>
-                </section>
+            <section class="zona-7">
+                <h2>Anunturi</h2>
+                <p>Pe 1 aprilie 2024 vom extrage 5 clienti norocosi care au cumparat licente in luna martie pentru a le oferi la alegere o licenta software! Nu este nicio pacaleala!</p>
             </section>
 
-            <section id="faq">
+            <section class="zona-3" id="faq">
                 <h2>Intrebari frecvente</h2>
                 <details>
                     <summary>De ce as cumpara de la EasyLicense in loc sa cumpar de la alte magazine de licente software?</summary>
@@ -157,20 +163,116 @@
                     </math>
                 </details>
             </section>
+
+            <section class="zona-4">
+                <h2>Recenzii primite de la clienti</h2>
+                <details>
+                    <summary>George George</summary>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste inventore fuga quam tenetur non nostrum officiis beatae rerum exercitationem! Minima unde nostrum placeat! Maxime, recusandae adipisci? Ullam tenetur odio corporis.</p>
+                </details>
+                <details>
+                    <summary>Ion Ionut</summary>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste inventore fuga quam tenetur non nostrum officiis beatae rerum exercitationem! Minima unde nostrum placeat! Maxime, recusandae adipisci? Ullam tenetur odio corporis.</p>
+                </details>
+                <details>
+                    <summary>Alex Alex</summary>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste inventore fuga quam tenetur non nostrum officiis beatae rerum exercitationem! Minima unde nostrum placeat! Maxime, recusandae adipisci? Ullam tenetur odio corporis.</p>
+                </details>
+            </section>
+
+            <section class="zona-2">
+                <h2>Program de lucru</h2>
+                <caption>Program de lucru - Suport clienti</caption>
+                <div id="program-lucru-wrapper">
+                    <table id="program-lucru">
+                        <thead>
+                            <tr>
+                                <th>Zi lucratoare</th>
+                                <th colspan="2">Ora inceput - sfarsit</th>
+                                <th>Observatii</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Luni</td>
+                                <td>08:00</td>
+                                <td>20:00</td>
+                                <td>Telefon, e-mail</td>
+                            </tr>
+                            <tr>
+                                <td>Marti</td>
+                                <td>08:00</td>
+                                <td>20:00</td>
+                                <td>Telefon, e-mail</td>
+                            </tr>
+                            <tr>
+                                <td>Miercuri</td>
+                                <td>08:00</td>
+                                <td>20:00</td>
+                                <td>Telefon, e-mail</td>
+                            </tr>
+                            <tr>
+                                <td>Joi</td>
+                                <td>08:00</td>
+                                <td>20:00</td>
+                                <td>Telefon, e-mail</td>
+                            </tr>
+                            <tr>
+                                <td>Vineri</td>
+                                <td>08:00</td>
+                                <td>20:00</td>
+                                <td>Telefon, e-mail</td>
+                            </tr>
+                            <tr>
+                                <td>Sambata</td>
+                                <td>10:00</td>
+                                <td>14:00</td>
+                                <td>E-mail</td>
+                            </tr>
+                            <tr>
+                                <td>Duminica</td>
+                                <td>10:00</td>
+                                <td>14:00</td>
+                                <td>E-mail</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="4">INCHIS de sarbatori legale! Multumim!</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </section>
+
+            <section class="zona-8" id="promotii">
+                <h2>Promotii</h2>
+                <section>
+                    <h3>Reducere licente Windows</h3>
+                    <p>Periodic negociem cu furnizorii nostri de licente Windows pentru a oferi clientilor nostri un pret competitiv. Din discounturile obtinute, avem intotdeauna grija sa oferim mai departe clientilor. Cui nu-i prinde bine o reducere?</p>
+                </section>
+
+                <section>
+                    <h3>Reducere licente Office</h3>
+                    <p>Cum "scump" nu inseamna intotdeauna "de calitate", nici "ieftin" nu inseamna intotdeauna "prost". Periodic negociem cu furnizorii nostri de licente Microsoft Office si punem la dispozitia clientilor preturi mai mici pentru exact aceleasi produse software!</p>
+                </section>
+            </section>            
         </main>
 
         <footer>
+            <a href="#" id="link-top" title="Mergi inapoi la inceputul paginii">ᐃ</a>
+            
             <section id="contact">
                 <h2>Contact EasyLicense</h2>
                 <address>
                     <p>Numar de telefon: <a href="tel:+40000000000">+40 000 000 000</a></p>
                     <p>Adresa: <a href="https://maps.app.goo.gl/ZDBSvTneASkfJTT38" target="_blank">Strada Academiei 14, București 010014 (Facultatea de Matematica si Informatica, Universitatea din Bucuresti)</a></p>
                     <p>E-mail: <a href="mailto:contact@easylicense.ro">contact@easylicense.ro</a></p>
-                    <a aria-label="Chat on WhatsApp" href="https://wa.me/40000000000"><img alt="Chat on WhatsApp" src="./resurse/imagini/chat-on-whatsapp.png"></a>
+                    <a aria-label="Chat on WhatsApp" href="https://wa.me/40000000000"><img alt="Chat on WhatsApp" id="chat-on-wapp" src="./resurse/imagini/chat-on-whatsapp.png"></a>
                 </address>
             </section>
 
-            <section>
+            <section id="linkuri-utile">
                 <h2>Linkuri utile</h2>
                 <ul>
                     <li><a href="#acasa">Mergi la inceputul paginii</a></li>
@@ -179,7 +281,12 @@
                 </ul>
             </section>
             
-            <small>Florin-Alexandru Dima &copy; 2024 - Facultatea de Matematica-Informatica, Universitatea din Bucuresti. Pagina creata la <time datetime="2023-03-02 12:22:05">2 martie 2024, ora 12:22.</time></small>
+            <section id="copyright">
+                <h2>Drepturi de autor</h2>
+                <small>Florin-Alexandru Dima &copy; 2024 - Facultatea de Matematica-Informatica, Universitatea din Bucuresti. Pagina creata la <time datetime="2023-03-02 12:22:05">2 martie 2024, ora 12:22.</time></small>
+            </section>
         </footer>
+
+        <script src="https://kit.fontawesome.com/7d005049bf.js" crossorigin="anonymous"></script>
     </body>
 </html>
