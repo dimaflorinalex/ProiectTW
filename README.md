@@ -4,5 +4,5 @@
 
 #### Tehnologii utilizate
 - Backend: -
-- Frontend: HTML
+- Frontend: HTML5, CSS3
 - Database: -
