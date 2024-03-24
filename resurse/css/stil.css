@@ -78,7 +78,7 @@ header {
     column-gap: 10px;
 }
 
-#header__menu__btn {
+.header__menu__btn {
     display: none;
 }
 
@@ -294,7 +294,7 @@ math mo {
 
 @media screen and (max-width: 480px) {
     * {
-        animation: none !important;
+        animation: none;
     }
 
     body {

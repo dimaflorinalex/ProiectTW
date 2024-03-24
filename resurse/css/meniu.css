@@ -7,11 +7,11 @@ nav ul {
   display: flex;
   gap: 10px;
 }
-#meniu #meniu__link {
+#meniu .meniu__link {
   display: block;
   transition: transform 0.25s ease-in-out 0s;
 }
-#meniu #meniu__link:hover {
+#meniu .meniu__link:hover {
   transform: scale(1.1);
 }
 #meniu .submeniu-wrapper {
@@ -77,7 +77,7 @@ nav ul {
   #meniu {
     font-size: 0.9em;
   }
-  #meniu #meniu__link > span {
+  #meniu .meniu__link > span {
     display: none;
   }
 }
@@ -86,18 +86,50 @@ nav ul {
     width: 100%;
   }
   #header__menu__btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    position: relative;
     width: 35px;
     height: 35px;
     border-radius: 100%;
-    transition: background 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s;
+    transition: background 0.25s ease-in-out 0s;
+  }
+  #header__menu__btn .header__menu__btn__element {
+    width: 16px;
+    height: 2px;
+    background: black;
+    position: absolute;
+    left: 27%;
+    transition: all 0.25s ease-in-out 0s;
   }
   #header__menu__btn:hover {
     cursor: pointer;
     background: var(--primary-color);
-    color: white;
+  }
+  #header__menu__btn:hover .header__menu__btn__element {
+    background: white;
+  }
+  #header__menu__btn:hover .header__menu__btn__element:nth-child(1) {
+    top: 48%;
+    transform: rotate(45deg);
+  }
+  #header__menu__btn:hover .header__menu__btn__element:nth-child(2) {
+    opacity: 0;
+  }
+  #header__menu__btn:hover .header__menu__btn__element:nth-child(3) {
+    top: 48%;
+    transform: rotate(-45deg);
+  }
+  #header__menu__btn .header__menu__btn__element:nth-child(1) {
+    transition-delay: 0.02s;
+    top: calc(14% + 6px);
+  }
+  #header__menu__btn .header__menu__btn__element:nth-child(2) {
+    transition-delay: 0.02s;
+    top: calc(14% + 12px);
+  }
+  #header__menu__btn .header__menu__btn__element:nth-child(3) {
+    transition-delay: 0.06s;
+    top: calc(14% + 18px);
   }
   nav {
     align-self: flex-start;
@@ -109,14 +141,14 @@ nav ul {
     margin-top: 20px;
     gap: 10px;
   }
-  #meniu #meniu__link {
+  #meniu .meniu__link {
     display: block;
     transition: transform 0.25s ease-in-out 0s;
   }
-  #meniu #meniu__link > span {
+  #meniu .meniu__link > span {
     display: inline-block;
   }
-  #meniu #meniu__link:hover {
+  #meniu .meniu__link:hover {
     transform: scale(1.1);
   }
   #meniu .submeniu-wrapper {
