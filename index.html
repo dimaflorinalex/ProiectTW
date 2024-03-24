@@ -22,6 +22,8 @@
 
         <link rel="stylesheet" href="./resurse/css/reset.css" type="text/css">
         <link rel="stylesheet" href="./resurse/css/stil.css" type="text/css">
+        <link rel="stylesheet" href="./resurse/css/meniu.css" type="text/css">
+        <link rel="stylesheet" href="./resurse/css/print.css" type="text/css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,29 +31,37 @@
     </head>
     <body>
         <header>
-            <div id="header__brand">
-                <img src="./resurse/imagini/logo.png" alt="Logo EasyLicense" width="50" height="50">
-                <h1 id="acasa">EasyLicense</h1>
+            <div id="header__brand-wrapper">
+                <div id="header__brand">
+                    <img src="./resurse/imagini/logo.png" alt="Logo EasyLicense" width="50" height="50">
+                    <h1 id="acasa">EasyLicense</h1>
+                </div>
+                <div id="header__menu__btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
 
-            <details>
-                <summary>Meniu</summary>
-                <nav>
-                    <ul>
-                        <li><a href="#acasa">Acasa</a></li>
-                        <li><a href="#despre-noi">Despre noi</a></li>
-                        <li><a href="#produse">Produse</a>
-                            <ul>
-                                <li><a href="#licente-windows">Licente Windows</a></li>
-                                <li><a href="#licente-office">Licente Office</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#promotii">Promotii</a></li>
-                        <li><a href="#faq">Intrebari frecvente</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </details>
+            <nav>
+                <ul id="meniu" class="meniu__small-screen--hidden">
+                    <li class="submeniu-wrapper">
+                        <a href="./index.html#acasa" class="meniu__link"><i class="fa-solid fa-house"></i> <span>Acasa</span></a>
+                        <ul class="submeniu">
+                            <li><a href="./index.html#despre-noi">Despre noi</a></li>
+                            <li><a href="./index.html#produse">Produse</a>
+                            <li><a href="./index.html#promotii">Promotii</a></li>
+                            <li><a href="./index.html#faq">Intrebari frecvente</a></li>
+                            <li><a href="./index.html#contact">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="submeniu-wrapper">
+                        <a href="./produse.html" class="meniu__link">Produse</a>
+                        <ul class="submeniu">
+                            <li><a href="./produse/licente-windows.html">Licente Windows</a></li>
+                            <li><a href="./produse/licente-office.html">Licente Office</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </header>
 
         <main>
@@ -289,5 +299,6 @@
         </footer>
 
         <script src="https://kit.fontawesome.com/7d005049bf.js" crossorigin="anonymous"></script>
+        <script src="./resurse/js/script.js"></script>
     </body>
 </html>

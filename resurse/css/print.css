@@ -1,0 +1,30 @@
+@media print {
+  @page :left {
+    margin-left: 2cm;
+    margin-right: 1cm;
+  }
+  @page :right {
+    margin-left: 1cm;
+    margin-right: 2cm;
+  }
+  html::before {
+    content: "Acesta este un proiect scolar!";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: 6px double black;
+  }
+  #link-top, .container-iframe, video, img, picture, figure, .fa-solid, .fa-regular {
+    display: none !important;
+  }
+  main {
+    display: block !important;
+  }
+  a, table, thead, tbody, tr, td, h1, h2, h3, h4, h5, h6, p, ul, li {
+    color: inherit !important;
+    border-color: black !important;
+    text-decoration: none !important;
+  }
+}
+
+/*# sourceMappingURL=print.css.map */

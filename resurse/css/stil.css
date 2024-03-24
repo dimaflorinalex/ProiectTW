@@ -3,7 +3,7 @@
 }
 
 body {
-    --primary-color: #2765F5;
+    --primary-color: #2765f5;
     --secondary-color: #B5954A;
     --secondary-color-2: #756848;
     --primary-color-2: #424B61;
@@ -17,6 +17,7 @@ body {
 a {
     color: var(--primary-color);
     transition: color 0.25s ease-in-out 0s;
+    text-decoration: none;
 }
 
 a:hover {
@@ -57,17 +58,28 @@ img {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 10px 20px;
     box-shadow: 0px 0px 10px 5px lightgray;
 }
 
-header > #header__brand {
+#header__brand-wrapper > #header__brand {
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 10px;
+}
+
+#header__brand-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+}
+
+#header__menu__btn {
+    display: none;
 }
 
 header + main {

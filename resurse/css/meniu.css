@@ -1,0 +1,141 @@
+nav ul {
+  list-style: none;
+}
+
+#meniu {
+  font-size: 1em;
+  display: flex;
+  gap: 10px;
+}
+#meniu #meniu__link {
+  display: block;
+  transition: transform 0.25s ease-in-out 0s;
+}
+#meniu #meniu__link:hover {
+  transform: scale(1.1);
+}
+#meniu .submeniu-wrapper {
+  position: relative;
+  padding: 20px 10px;
+}
+#meniu .submeniu-wrapper .submeniu {
+  background: white;
+  box-shadow: 0px 0px 5px 0px lightgray;
+  padding: 20px;
+  width: max-content;
+  transition: transform 0.25s ease-in-out 0s;
+  transform: scaleY(0);
+  transform-origin: top center;
+  position: absolute;
+  top: 50px;
+  left: -20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#meniu .submeniu-wrapper .submeniu a {
+  display: block;
+  position: relative;
+}
+#meniu .submeniu-wrapper .submeniu a::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 16px;
+  background-image: linear-gradient(to right, white, var(--primary-color));
+  position: absolute;
+  top: 0px;
+  left: -20px;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.25s ease-in-out 0s;
+}
+#meniu .submeniu-wrapper .submeniu a::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 16px;
+  background-image: linear-gradient(to left, white, var(--primary-color));
+  position: absolute;
+  right: -20px;
+  top: 0px;
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: transform 0.25s ease-in-out 0s;
+}
+#meniu .submeniu-wrapper .submeniu a:hover::before {
+  transform: scaleX(1);
+}
+#meniu .submeniu-wrapper .submeniu a:hover::after {
+  transform: scaleX(1);
+}
+#meniu .submeniu-wrapper:hover .submeniu {
+  transform: scaleY(1);
+}
+
+@media screen and (max-width: 720px) {
+  #meniu {
+    font-size: 0.9em;
+  }
+  #meniu #meniu__link > span {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  #header__brand-wrapper {
+    width: 100%;
+  }
+  #header__menu__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    transition: background 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s;
+  }
+  #header__menu__btn:hover {
+    cursor: pointer;
+    background: var(--primary-color);
+    color: white;
+  }
+  nav {
+    align-self: flex-start;
+  }
+  #meniu {
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  #meniu #meniu__link {
+    display: block;
+    transition: transform 0.25s ease-in-out 0s;
+  }
+  #meniu #meniu__link > span {
+    display: inline-block;
+  }
+  #meniu #meniu__link:hover {
+    transform: scale(1.1);
+  }
+  #meniu .submeniu-wrapper {
+    position: relative;
+    padding: 0px 10px;
+  }
+  #meniu .submeniu-wrapper .submeniu {
+    background: white;
+    box-shadow: unset;
+    padding: 20px;
+    width: 100%;
+    transform: scaleY(1);
+    position: relative;
+    top: 0px;
+    left: 10px;
+  }
+  #meniu.meniu__small-screen--hidden {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=meniu.css.map */
