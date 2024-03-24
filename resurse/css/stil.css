@@ -132,11 +132,11 @@ main {
     border: 2px solid black;
 }
 
-#program-lucru th:nth-child(even), #program-lucru td:nth-child(even) {
+#program-lucru td:nth-child(even) {
     border-left-color: var(--primary-color-2);
 }
 
-#program-lucru th:nth-child(odd), #program-lucru td:nth-child(odd) {
+#program-lucru tbody td:nth-child(odd) {
     border-right-color: var(--secondary-color);
 }
 
